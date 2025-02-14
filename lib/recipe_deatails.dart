@@ -17,6 +17,9 @@ class _RecipeDeatailsState extends State<RecipeDeatails> {
       appBar: AppBar(
         title: Text("Recipe Details"),
         backgroundColor: Colors.redAccent,
+        iconTheme: IconThemeData(
+          color: Colors.white
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -54,7 +57,9 @@ class _RecipeDeatailsState extends State<RecipeDeatails> {
             // Recipe description
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(widget.description),
+              child: Text(widget.description,
+                textAlign: TextAlign.justify,
+              ),
             )
 
           ],

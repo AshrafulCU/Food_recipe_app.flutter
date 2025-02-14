@@ -32,9 +32,11 @@ class HomePage extends StatelessWidget {
                 color: Colors.redAccent,
               ),
 
-              child: GestureDetector(
+              child: GestureDetector(  // To find it , firstly click the card click yellow light, click weiget, write GestureDetector
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>RecipeDeatails(recipeName:recipe1Name, image:image1 , description:description1 ) ));
+                  Navigator.push(context, MaterialPageRoute(builder:
+                      (context)=>RecipeDeatails(recipeName:recipe1Name, image:image1 ,
+                          description:description1 ) ));
                 },
 
                 child: Card(
