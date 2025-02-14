@@ -18,6 +18,7 @@ class _RecipeDeatailsState extends State<RecipeDeatails> {
         title: Text("Recipe Details"),
         backgroundColor: Colors.redAccent,
         iconTheme: IconThemeData(
+
           color: Colors.white
         ),
       ),
